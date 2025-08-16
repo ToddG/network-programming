@@ -32,7 +32,7 @@ pub fn main() {
   // goal:01:establish a tcp connection (socket mode = active) (page 13)
   let assert Ok(socket) =
     connect("tcpbin.com", 4242, [atom.create("binary")], True, 1000)
-  logging.log(logging.Info, string.inspect(socket))
+  logging.log(logging.Info, "socket: " <> string.inspect(socket))
 
   // goal:02:send data on the tcp connection (page 14)
   let hw = "Hello, Wordl!\n"
