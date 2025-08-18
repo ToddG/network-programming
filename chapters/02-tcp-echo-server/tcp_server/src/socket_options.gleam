@@ -28,6 +28,7 @@ pub type TlsCerts {
 
 /// Options for the TCP socket
 pub type TcpOption {
+  Debug(Bool)
   Backlog(Int)
   Nodelay(Bool)
   Linger(#(Bool, Int))
